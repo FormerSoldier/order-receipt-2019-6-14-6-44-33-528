@@ -30,7 +30,7 @@ public class OrderReceipt {
 
     private void printNameAndAddress(StringBuilder output){
         output.append(order.getCustomerName());
-        output.append(order.getCustomerAddres());
+        output.append(order.getCustomerAddress());
     }
 
     private void printsLineItem(StringBuilder output){
@@ -39,7 +39,6 @@ public class OrderReceipt {
         for (LineItem lineItem : order.getLineItems()) {
             printItem(output, lineItem);
 
-            // calculate sales tax @ rate of 10%
             double salesTax = lineItem.calculateTotalAmount() * saleTaxRate;
             totSalesTx += salesTax;
 
