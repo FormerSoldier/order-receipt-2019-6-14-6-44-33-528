@@ -17,12 +17,7 @@ public class OrderReceipt {
         StringBuilder output = new StringBuilder();
 
         printHeaders(output);
-
-        // print date, bill no, customer name
-//        output.append("Date - " + order.getDate();
         printNameAndAddress(output);
-//        output.append(order.getCustomerLoyaltyNumber());
-
         printsLineItem(output);
 
         return output.toString();
