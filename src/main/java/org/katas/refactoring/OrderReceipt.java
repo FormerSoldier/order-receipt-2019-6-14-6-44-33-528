@@ -30,7 +30,7 @@ public class OrderReceipt {
 
     private void printNameAndAddress(StringBuilder output){
         output.append(order.getCustomerName());
-        output.append(order.getCustomerAddress());
+        output.append(order.getCustomerAddres());
     }
 
     private void printsLineItem(StringBuilder output){
